@@ -18,7 +18,8 @@ export default function BasicStack({ data }) {
       <Stack spacing={2}>
         <ul>
           {data.map((item) => (
-            <li key={item.id}>{item.name}</li>
+            <li key={item.id}>{item.name} 0000 </li>
+          
           ))}
         </ul>
       </Stack>
