@@ -2,7 +2,12 @@ import React from 'react'
 
 function Card() {
   return (
-    <div>Card</div>
+    <div>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+    </div>
   )
 }
 
