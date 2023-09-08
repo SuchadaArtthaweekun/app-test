@@ -1,11 +1,11 @@
 import React from 'react'
 
-function button() {
+function Button() {
   return (
     <div>
-        <button>Click me</button>
+        <button onClick={alert}>Click me</button>
     </div>
   )
 }
 
-export default button
+export default Button
