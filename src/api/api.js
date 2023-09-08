@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BasicStack from "../components/Stack";
 import CircularProgress from '@mui/material/CircularProgress';
+import TableAttractions from "../components/table";
 
 function Basketball() {
   const [data, setData] = useState(null);
@@ -36,7 +37,7 @@ function Basketball() {
 
   return (
     <div>
-            <BasicStack data={data}/>
+            <TableAttractions data={data}/>
     </div>
   );
 }
