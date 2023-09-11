@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Avatar from '@mui/material/Avatar';
+import Dialogdetail from './Dialog';
 
 
 export default function Tabledata( {api} ) {
@@ -20,6 +21,7 @@ export default function Tabledata( {api} ) {
             <TableCell align="center">Name</TableCell>
             <TableCell align="right">Latitude</TableCell>
             <TableCell align="right">Longitude</TableCell>
+            <TableCell align="right">Description</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -34,6 +36,9 @@ export default function Tabledata( {api} ) {
               </TableCell>
               <TableCell align="right">{row.latitude}</TableCell>
               <TableCell align="right">{row.longitude}</TableCell>
+              <TableCell align="right">
+                <Dialogdetail name={row.name} detail={row.detail} coverimage={row.coverimage}/>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
