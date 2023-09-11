@@ -16,9 +16,6 @@ function Api() {
     )
   }, [])
 
-  console.log(api)
-
-
   return(
     <div>
         <Tabledata api={api}/>

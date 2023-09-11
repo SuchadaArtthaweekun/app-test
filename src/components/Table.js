@@ -26,8 +26,8 @@ export default function Tabledata( {api} ) {
           {api.map((row) => (
             <TableRow key={row.id}>
             <TableCell align="right">{row.id}</TableCell>
-            <TableCell >
-                <Avatar alt="Travis Howard" src={row.coverimage} />
+            <TableCell component="th" scope="row" sx={{alignItems:'center'}}>
+                <Avatar alt="Travis Howard" sx={{margin:'auto'}} src={row.coverimage}/>
             </TableCell>
               <TableCell component="th" scope="row" align="center">
                 {row.name}
