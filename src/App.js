@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Api from './components/Api';
-import Table from './components/Table';
+import CardDetail from './components/Card';
 
 function App() {
   return (
     <div className="App">
+      <CardDetail />
       <Api />
     </div>
   );
